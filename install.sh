@@ -15,6 +15,7 @@ echo -ne "\nUPDATE COMPLETED!\n\n\n"
 # Install Tmux
 echo -ne "INSTALLING TMUX PACKAGE...\n\n"
 apt install tmux -y
+cp ./tmux/tmux.conf /etc/tmux.conf
 echo -ne "\nINSTALLATION COMPLETED!\n\n\n"
 
 # Install Vim
