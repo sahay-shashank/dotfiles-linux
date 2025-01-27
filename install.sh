@@ -20,9 +20,9 @@ echo -ne "\nINSTALLATION COMPLETED!\n\n\n"
 
 # Install Vim
 echo -ne "INSTALLING VIM PACKAGE...\n\n"
-curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
 tar -xzvf nvim-linux64.tar.gz
-mv nvim-linux64/bin/nvim /usr/local/bin/nvim
+mv -n nvim-linux64/* /usr/local/
 rm -r nvim-linux64 nvim-linux64.tar.gz
 echo -ne "\n\n"
 nvim --version
