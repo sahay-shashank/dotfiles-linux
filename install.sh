@@ -27,3 +27,7 @@ rm -r nvim-linux64 nvim-linux64.tar.gz
 echo -ne "\n\n"
 nvim --version
 echo -ne "\nINSTALLATION COMPLETED!\n\n\n"
+
+echo -ne "INSTALLING FZF PACKAGE...\n\n"
+apt install fzf -y
+echo -ne "\nINSTALLATION COMPLETED\n\n\n"
